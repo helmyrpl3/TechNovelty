@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1919"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="#FFF"/>
+    <TextView
+        android:id="@+id/layer2"
+        android:layout_width="320dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/welcome"
+        android:drawableLeft="@drawable/mini_logo"
+        android:paddingLeft="10dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:textColor="#000"/>
+
+    <ImageButton
+        android:id="@+id/btnInventory"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layer2"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="43dp"
+        android:background="@drawable/welcome"
+        android:src="@drawable/kardus"
+        android:orientation="horizontal"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/menuinv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInventory"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:text="Inventory Management"
+        android:textColor="#FFF"/>
+
+    <ImageButton
+        android:id="@+id/btnBusiness"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layer2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="43dp"
+        android:background="@drawable/welcome"
+        android:src="@drawable/coin"
+        android:orientation="horizontal"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/menubsn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBusiness"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="22dp"
+        android:gravity="center"
+        android:text="Business Analytics"
+        android:textColor="#FFF"/>
+
+    <ImageButton
+        android:id="@+id/btnWG"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnInventory"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="43dp"
+        android:background="@drawable/welcome"
+        android:src="@drawable/wg"
+        android:orientation="horizontal"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/menuWG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWG"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="Worker Group"
+        android:textColor="#FFF"/>
+
+    <ImageButton
+        android:id="@+id/btnIA"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnBusiness"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="43dp"
+        android:background="@drawable/welcome"
+        android:src="@drawable/ia"
+        android:orientation="horizontal"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/menuIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnIA"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="57dp"
+        android:gravity="center"
+        android:text="In-Alarm"
+        android:textColor="#FFF"/>
+
+
+</RelativeLayout>
